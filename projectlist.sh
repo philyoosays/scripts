@@ -1,5 +1,11 @@
 #!/bin/bash
 #
+# =================
+#   What uses me?
+# =================
+#   projects.sh
+#   start.sh
+#
 
   dir='/Users/philyoo/webdev'
   ga='/Users/philyoo/wdi'
@@ -24,6 +30,7 @@
       else
         START=all
       fi
+      SECONDARY=remote
       ;;
     eri)
       ext=/ERI-snopes
@@ -68,6 +75,10 @@
       ext=/chad_app
       START=both
       ;;
+    chadapp)
+      ext=/chad_app
+      START=both
+      ;;
     email)
       ext=/emailwidget
       START=both
@@ -93,6 +104,9 @@
       ;;
     speechtest)
       ext=/boneyard/speech-test
+      ;;
+    mediaviewer)
+      ext=/personal/mediaviewer
       ;;
     *)
       echo "$1 does not exist"

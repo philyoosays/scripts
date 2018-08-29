@@ -56,7 +56,7 @@ else
   echo "--creates a folder called client and copies template to that dir"
   echo ""
   echo "$ template here"
-  echo "--create all tempalte files in current dir"
+  echo "--create all template files in current dir"
   echo ""
   echo ""
 fi
