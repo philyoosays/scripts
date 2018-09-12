@@ -37,7 +37,7 @@
       START=both
       ;;
     helios)
-      ext=/personal/helios
+      ext=/personal/helios/helios-react
       START=dev
       ;;
     jarvis)
