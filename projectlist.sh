@@ -32,6 +32,10 @@
       fi
       SECONDARY=remote
       ;;
+    posclient)
+      ext=/pos_clientside
+      START=start
+      ;;
     eri)
       ext=/ERI-snopes
       START=both
