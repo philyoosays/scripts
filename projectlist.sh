@@ -11,17 +11,102 @@
   ga='/Users/philyoo/wdi'
 
   case $PROJECT in
-    scripts)
-      ext=/scripts
+    ai)
+      ext=/personal/pseudoAI
+      START=both
       ;;
-    templates)
-      ext=/templates
+    angulartodo)
+      ext=/boneyard/angular-todo-app
+      START=both
+      ;;
+    b2dev)
+      ext=/b2devs
+      START=both
       ;;
     boneyard)
       ext=/boneyard
       ;;
-    sandbox)
-      ext=/boneyard/sandbox
+    chad)
+      ext=/chad_app
+      START=both
+      ;;
+    chadapp)
+      ext=/chad_app
+      START=both
+      ;;
+    cortana)
+      ext=/personal/helios/helios-v0.2.0
+      START=dev
+      ;;
+    crm)
+      dir=$ga
+      ext=/unit02/projects/crm
+      START=dev
+      ;;
+    django-tut)
+      ext=/boneyard/django_starter
+      ;;
+    email)
+      ext=/emailwidget
+      START=both
+      ;;
+    eri)
+      ext=/ERI-snopes
+      START=both
+      ;;
+    gabot)
+      ext=/GABots
+      ;;
+    gabots)
+      ext=/GABots
+      ;;
+    gastack)
+      dir=$ga
+      ext=/unit02/projects/stackoverflow
+      START=dev
+      ;;
+    gh)
+      ext=/GABots/gracehopper
+      ;;
+    ghopper)
+      ext=/GABots/gracehopper
+      ;;
+    gracehopper)
+      ext=/GABots/gracehopper
+      ;;
+    helios)
+      ext=/personal/helios/helios-v0.2.0
+      START=dev
+      ;;
+    jarvis)
+      ext=/personal/helios
+      START=dev
+      ;;
+    mediaviewer)
+      ext=/personal/mediaviewer
+      ;;
+    minesweeper)
+      ext=/personal/minesweeper
+      ;;
+    mustang)
+      ext=/GABots/mustangscheduler
+      ;;
+    mustangbot)
+      ext=/GABots/mustangscheduler
+      ;;
+    octonion)
+      ext=/GABots/octonionscheduler
+      ;;
+    octonionbot)
+      ext=/GABots/octonionscheduler
+      ;;
+    personal)
+      ext=/personal/backup_portfolio/client
+      START=start
+      ;;
+    philyoo)
+      ext=/personal/backup_portfolio/client
+      START=start
       ;;
     pos)
       ext=/pos
@@ -36,81 +121,48 @@
       ext=/pos_clientside
       START=start
       ;;
-    eri)
-      ext=/ERI-snopes
+    psychmeds)
+      ext=/psych_meds_app
       START=both
       ;;
-    helios)
-      ext=/personal/helios/helios-react
-      START=dev
+    retail)
+      ext=/retailpos
+      START=start
       ;;
-    jarvis)
-      ext=/personal/helios
-      START=dev
+    retailpos)
+      ext=/retailpos
+      START=start
       ;;
-    gastack)
-      dir=$ga
-      ext=/unit02/projects/stackoverflow
-      START=dev
+    sandbox)
+      ext=/boneyard/sandbox
       ;;
-    tetris)
-      dir=$ga
-      ext=/unit01/projects/tetris
+    scripts)
+      ext=/scripts
       ;;
     snake)
       dir=$ga
       ext=/unit01/projects/snake
-      ;;
-    crm)
-      dir=$ga
-      ext=/unit02/projects/crm
-      START=dev
       ;;
     spaceteam)
       dir=$ga
       ext=/unit04/projects/space-team
       START=both
       ;;
-    b2dev)
-      ext=/b2devs
-      START=both
-      ;;
-    chad)
-      ext=/chad_app
-      START=both
-      ;;
-    chadapp)
-      ext=/chad_app
-      START=both
-      ;;
-    email)
-      ext=/emailwidget
-      START=both
-      ;;
-    psychmeds)
-      ext=/psych_meds_app
-      START=both
-      ;;
-    minesweeper)
-      ext=/personal/minesweeper
-      ;;
-    philyoo)
-      ext=/personal/backup_portfolio/client
-      START=start
-      ;;
-    personal)
-      ext=/personal/backup_portfolio/client
-      START=start
-      ;;
-    angulartodo)
-      ext=/boneyard/angular-todo-app
-      START=both
-      ;;
     speechtest)
       ext=/boneyard/speech-test
       ;;
-    mediaviewer)
-      ext=/personal/mediaviewer
+    stock)
+      ext="/stocks"
+      ;;
+    stocks)
+      ext="/stocks"
+      ;;
+    templates)
+      ext=/templates
+      ;;
+    tetris)
+      dir=$ga
+      ext=/unit01/projects/tetris
       ;;
     *)
       echo "$1 does not exist"
